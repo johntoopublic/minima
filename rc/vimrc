@@ -1,7 +1,10 @@
-set smartindent
 set spell
-filetype indent on
 syntax enable
+
+" Auto indent with size 2 tabs.
+set smartindent
+set shiftwidth=2
+set tabstop=2
 
 " Map ^hjkl to window panes.
 map <silent> <C-h> <C-w>h
