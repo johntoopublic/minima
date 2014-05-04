@@ -1,0 +1,27 @@
+set smartindent
+set spell
+filetype indent on
+syntax enable
+
+" Map ^hjkl to window panes.
+map <silent> <C-h> <C-w>h
+map <silent> <C-j> <C-w>j
+map <silent> <C-k> <C-w>k
+map <silent> <C-l> <C-w>l
+
+" Map ^e to close pane if there are no changes.
+map <silent> <C-e> :q<cr>
+
+" Map -= to horizontal, <> to vertical pane resize.
+map - <C-w>-
+map = <C-w>+
+map < <C-w><
+map > <C-w>>
+
+" Allow <> to change indentation is visual mode.
+vmap > >gv
+vmap < <gv
+
+" Reload the current buffer if changed externally.
+au BufEnter * checktime
+set autoread

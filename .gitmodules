@@ -1,0 +1,3 @@
+[submodule "ponyrc"]
+	path = ponyrc
+	url = git://github.com/johntoopublic/ponyrc.git

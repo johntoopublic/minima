@@ -1,0 +1,12 @@
+MINIMA=$(dirname $(readlink ${BASH_SOURCE[0]}))
+. $MINIMA/../ponyrc/discord.bash
+
+PS1="$PONY_PINKIE\t$PONY_DIRECTORY \W$PONY_RESET "
+TERM=xterm-256color
+
+export EDITOR='vim'
+
+alias ls="ls --color"
+alias l="ls -la"
+alias less="less -r"
+alias screen="screen -U"

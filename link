@@ -1,0 +1,7 @@
+MINIMA=$(dirname $0)
+
+ln -s $MINIMA/rc/bashrc .bashrc
+ln -s $MINIMA/rc/gitconfig .gitconfig
+ln -s $MINIMA/rc/inputrc .inputrc
+ln -s $MINIMA/rc/screenrc .screenrc
+ln -s $MINIMA/rc/vimrc .vimrc

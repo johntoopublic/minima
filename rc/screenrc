@@ -1,0 +1,1 @@
+hardstatus lastline '%{= Ck}%c:%s%{= kC} %w'
