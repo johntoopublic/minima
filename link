@@ -1,7 +1,7 @@
-MINIMA=$(dirname $0)
+MINIMA=$(readlink -f $(dirname $0))
 
-ln -s $MINIMA/rc/bashrc .bashrc
-ln -s $MINIMA/rc/gitconfig .gitconfig
-ln -s $MINIMA/rc/inputrc .inputrc
-ln -s $MINIMA/rc/screenrc .screenrc
-ln -s $MINIMA/rc/vimrc .vimrc
+ln -s $MINIMA/rc/bashrc $HOME/.bashrc
+ln -s $MINIMA/rc/gitconfig $HOME/.gitconfig
+ln -s $MINIMA/rc/inputrc $HOME/.inputrc
+ln -s $MINIMA/rc/screenrc $HOME/.screenrc
+ln -s $MINIMA/rc/vimrc $HOME/.vimrc
