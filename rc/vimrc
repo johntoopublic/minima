@@ -1,5 +1,9 @@
+" Enable default settings.
 set spell
+set textwidth=80
+set wildmenu
 syntax enable
+filetype plugin indent on
 
 " Auto indent with size 2 tabs.
 set smartindent
