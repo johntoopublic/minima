@@ -1,4 +1,5 @@
 MINIMA=$(dirname $(readlink ${BASH_SOURCE[0]}))
+. $MINIMA/../ponyrc/colors.bash
 . $MINIMA/../ponyrc/discord.bash
 
 PS1="$PONY_PINKIE\t$PONY_DIRECTORY \W$PONY_RESET "
