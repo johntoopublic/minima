@@ -1,1 +1,3 @@
+defscrollback 10000
 hardstatus lastline '%{= Ck}%c:%s%{= kC} %w'
+nethack on
