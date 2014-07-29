@@ -2,7 +2,7 @@ MINIMA=$(dirname $(readlink ${BASH_SOURCE[0]}))
 . $MINIMA/../ponyrc/colors.bash
 . $MINIMA/../ponyrc/discord.bash
 
-PS1="$PONY_PS1_START$PONY_PINKIE\t$PONY_DIRECTORY \W$PONY_RESET$PONY_PS1_END "
+PS1="$PONY_PS1_START$PONY_RANDOM\t$PONY_DIRECTORY \W$PONY_RESET$PONY_PS1_END "
 PATH=$PATH:node_modules/.bin
 TERM=xterm-256color
 
