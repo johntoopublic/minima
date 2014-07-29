@@ -3,3 +3,5 @@
 	co = checkout
 	st = status
 	supdate = submodule foreach git pull origin master
+[push]
+	default = matching
