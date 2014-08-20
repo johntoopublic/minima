@@ -11,4 +11,7 @@ export EDITOR='vim'
 alias ls="ls --color"
 alias l="ls -la"
 alias less="less -r"
+if [ -f /usr/bin/python2.7 ]; then
+  alias npm="PYTHON=python2.7 npm"
+fi
 alias screen="screen -U"
