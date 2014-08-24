@@ -5,3 +5,6 @@
 	supdate = submodule foreach git pull origin master
 [push]
 	default = matching
+[user]
+	name = johntoopublic
+	email = johntoopublic@gmail.com
