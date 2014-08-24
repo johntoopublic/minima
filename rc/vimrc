@@ -1,9 +1,15 @@
 " Enable default settings.
-set spell
 set textwidth=80
 set wildmenu
 syntax enable
 filetype plugin indent on
+
+" Add non-standard extensions.
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+
+" Add filetype local behavior. 
+autocmd FileType gitcommit,markdown setlocal spell
+autocmd FileType css setlocal iskeyword+=-
 
 " Auto indent with size 2 tabs.
 set smartindent

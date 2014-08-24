@@ -1,4 +1,5 @@
-MINIMA=$(readlink -f $(dirname $0))
+# Bash only version of `readlink -f`
+MINIMA=$(cd "$(echo "${DIR%/*}")" 2>/dev/null; pwd -P)
 
 ln -s $MINIMA/rc/bashrc $HOME/.bashrc
 ln -s $MINIMA/rc/gitconfig $HOME/.gitconfig

@@ -7,10 +7,17 @@ PATH=$PATH:node_modules/.bin
 TERM=xterm-256color
 
 export EDITOR='vim'
+export CLICOLOR=1
 
-alias ls="ls --color"
+# Color ls for Linux.
+if [ $(uname) == "Linux"  ]; then
+  alias ls="ls --color=auto"
+fi
+
 alias l="ls -la"
 alias less="less -r"
+
+# Avoid python3 for npm on Arch.
 if [ -f /usr/bin/python2.7 ]; then
   alias npm="PYTHON=python2.7 npm"
 fi
